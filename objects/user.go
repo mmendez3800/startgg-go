@@ -6,8 +6,14 @@ type User struct {
 	birthday string
 	discriminator string
 	genderPronoun string
-	location Address
 	name string
-	player Player
 	slug string
+}
+
+type UserAddress struct {
+	location Address
+}
+
+type UserPlayser struct {
+	player Player
 }
