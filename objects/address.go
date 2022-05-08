@@ -1,10 +1,10 @@
 package objects
 
 type Address struct {
-	id int
-	city string
-	country string
-	countryId int
-	state string
-	stateId int
+	ID int `json:"id"`
+	City string `json:"city"`
+	Country string `json:"country"`
+	CountryID int `json:"countryId"`
+	State string `json:"state"`
+	StateID int `json:"stateId"`
 }

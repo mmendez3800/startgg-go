@@ -1,19 +1,19 @@
 package objects
 
 type User struct {
-	id int
-	bio string
-	birthday string
-	discriminator string
-	genderPronoun string
-	name string
-	slug string
+	ID int `json:"id"`
+	Bio string `json:"bio"`
+	Birthday string `json:"birthday"`
+	Discriminator string `json:"discriminator"`
+	GenderPronoun string `json:"genderPronoun"`
+	Name string `json:"name"`
+	Slug string `json:"slug"`
 }
 
 type UserAddress struct {
-	location Address
+	Location Address `json:"location"`
 }
 
 type UserPlayser struct {
-	player Player
+	Player Player `json:"player"`
 }

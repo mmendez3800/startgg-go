@@ -1,11 +1,11 @@
 package objects
 
 type Player struct {
-	id int
-	gamerTag string
-	prefix string
+	ID int `json:"id"`
+	GamerTag string `json:"gamerTag"`
+	Prefix string `json:"prefix"`
 }
 
 type PlayerUser struct {
-	user User
+	User User `json:"user"`
 }
