@@ -1,5 +1,14 @@
 package objects
 
+type SmashGGAddress struct {
+	DataAddress DataAddress `json:"data"`
+	Errors []Errors `json:"errors"`
+}
+
+type DataAddress struct {
+	Address Address `json:"address"`
+}
+
 type Address struct {
 	ID int `json:"id"`
 	City string `json:"city"`

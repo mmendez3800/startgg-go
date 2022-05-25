@@ -8,17 +8,4 @@ const (
 			prefix
 		}
 	}`
-	PlayerUserQuery = `query PlayerUserQuery($id: ID) {
-		player(id: $id) {
-			user {
-				id
-				bio
-				birthday
-				discriminator
-				genderPronoun
-				name
-				slug
-			}
-		}
-	}`
 )

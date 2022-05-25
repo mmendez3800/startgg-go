@@ -9,11 +9,3 @@ type User struct {
 	Name string `json:"name"`
 	Slug string `json:"slug"`
 }
-
-type UserAddress struct {
-	Location Address `json:"location"`
-}
-
-type UserPlayser struct {
-	Player Player `json:"player"`
-}

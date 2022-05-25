@@ -12,25 +12,4 @@ const (
 			slug
 		}
 	}`
-	UserAddressQuery = `query UserAddressQuery($id: ID) {
-		user(id: $id) {
-			address {
-				id
-				city
-				country
-				countryId
-				state
-				stateId
-			}
-		}
-	}`
-	UserPlayerQuery = `query UserPlayerQuery($id: ID) {
-		user(id: $id) {
-			player {
-				id
-				gamerTag
-				prefix
-			}
-		}
-	}`
 )
