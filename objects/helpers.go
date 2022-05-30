@@ -2,8 +2,8 @@ package objects
 
 type Errors struct {
 	Message string `json:"message"`
-	Locations []Locations `json:"locations"`
 	Path []string `json:"path"`
+	Locations []Locations `json:"locations"`
 	Extensions Extensions `json:"extensions"`
 }
 
@@ -13,6 +13,12 @@ type Locations struct {
 }
 
 type Extensions struct {
-	Code string `json:"code"`
-	Timestamp string `json:"timestamp"`
+	Category string `json:"category"`
+}
+
+type DynamicJSON map[string]interface{}
+
+type FailedCall struct {
+	Succes bool `json:"success"`
+	Message string `json:"message"`
 }
