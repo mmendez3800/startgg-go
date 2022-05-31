@@ -1,3 +1,5 @@
+// Package objects defines the structures of the Start GG objects that can be called upon
+// when performing the API calls.
 package objects
 
 type StartGGTournament struct {
@@ -31,7 +33,7 @@ type Tournament struct {
 	PostalCode string `json:"postalCode"`
 	PrimaryContact string `json:"primaryContact"`
 	PrimaryContactType string `json:"primaryContactType"`
-	Publishing DynamicJSON `json:"publishing"`
+	Publishing map[string]interface{} `json:"publishing"`
 	RegistrationClosesAt int64 `json:"registrationClosesAt"`
 	Rules string `json:"rules"`
 	ShortSlug string `json:"shortSlug"`

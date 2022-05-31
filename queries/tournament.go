@@ -1,3 +1,5 @@
+// Package queries stores the list of GraphQL queries that can be run on the Start GG
+// API and indicates the possible values that can be passed.
 package queries
 
 const (
@@ -5,6 +7,10 @@ const (
 		tournament(id: $id, slug: $slug) {
 			id
 			addrState
+			city
+			countryCode
+			createdAt
+			currency
 			endAt
 			eventRegistrationClosesAt
 			hasOfflineEvents

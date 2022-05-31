@@ -1,3 +1,5 @@
+// Package objects defines the structures of the Start GG objects that can be called upon
+// when performing the API calls.
 package objects
 
 type Errors struct {
@@ -15,8 +17,6 @@ type Locations struct {
 type Extensions struct {
 	Category string `json:"category"`
 }
-
-type DynamicJSON map[string]interface{}
 
 type FailedCall struct {
 	Succes bool `json:"success"`
