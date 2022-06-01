@@ -1,8 +1,8 @@
 # StartGG API Wrapper (WIP)
-This project implements a wrapper for the StartGG API using Go (Golang). For those that do not wish to go through the full implementation of the GraphQL language, this wrapper provides an easy and concise way of to make API calls for the StartGG platform.
+This project implements a wrapper for the StartGG API using Go (Golang). For those that do not wish to go through the full implementation of the API using the GraphQL language, this wrapper provides an easy way of to make API calls towards the StartGG platform.
 
 ## General Info
-It is currently a work-in-progress and not finalized. Additional changes and updates are still needed such as implementation of other objects and the ability to perform calls for nested objects.
+It is currently a work-in-progress and not finalized. Additional changes and updates are still needed such as implementation of other objects and the ability to see core components of objects within core objects such as ids or slugs.
 
 ## Technologies
 The programs in this project were run using the following:
