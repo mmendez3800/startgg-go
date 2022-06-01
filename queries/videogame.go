@@ -3,13 +3,10 @@
 package queries
 
 const (
-	UserQuery = `query UserQuery($id: ID, $slug: String) {
-		user(id: $id, slug: $slug) {
+	VideogameQuery = `query VideogameQuery($id: ID, $slug: String) {
+		videogame(id: $id, slug: $slug) {
 			id
-			bio
-			birthday
-			discriminator
-			genderPronoun
+			displayName
 			name
 			slug
 		}

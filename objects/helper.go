@@ -1,4 +1,4 @@
-// Package objects defines the structures of the Start GG objects that can be called upon
+// Package objects defines the structures of the StartGG objects that can be called upon
 // when performing the API calls.
 package objects
 

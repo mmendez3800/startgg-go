@@ -1,4 +1,4 @@
-// Package queries stores the list of GraphQL queries that can be run on the Start GG
+// Package queries stores the list of GraphQL queries that can be run on the StartGG
 // API and indicates the possible values that can be passed.
 package queries
 

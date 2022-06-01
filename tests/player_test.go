@@ -18,10 +18,10 @@ func TestPlayer(t *testing.T) {
 	// Implements a level of logging to indicate type.
 	PlayerLogger := log.New(os.Stdout, "PLAYER TESTS - ", log.LstdFlags)
 
-	// Performs test for user object by ID.
+	// Performs test for Player object by ID.
 	idResult, err := startgg.PlayerByID(219999)
 	if err != nil {
 		PlayerLogger.Fatalf("- ID Error - %s", err.Error())
 	}
-	PlayerLogger.Printf("- ID Results - %+v", idResult)
+	PlayerLogger.Printf("- ID Results - %+v\n\n", idResult)
 }

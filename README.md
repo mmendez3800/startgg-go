@@ -48,6 +48,32 @@ if err != nil {
 fmt.Printf("Results - %+v", idResult)
 ```
 
+### Shop
+```go
+import (
+    "fmt"
+
+    "github.com/mmendez3800/startgg-go"
+)
+
+// Indicate the authorization token to be used for API calls
+startgg.SetAuthToken("STARTGG_TOKEN")
+
+// Pull the results of the Shop object by ID reference
+idResult, err := startgg.ShopByID(3244)
+if err != nil {
+    fmt.Printf("Error - %s", err)
+}
+fmt.Printf("Results - %+v", idResult)
+
+// Pull the results of the Shop object by slug reference
+slugResult, err := startgg.ShopBySlug("shop/mainshop-1")
+if err != nil {
+    fmt.Printf("Error - %s", err)
+}
+fmt.Printf("Results - %+v", slugResult)
+```
+
 ### Tournament
 ```go
 import (
@@ -94,6 +120,32 @@ fmt.Printf("Results - %+v", idResult)
 
 // Pull the results of the User object by slug reference
 slugResult, err := startgg.UserBySlug("user/fd58260e")
+if err != nil {
+    fmt.Printf("Error - %s", err)
+}
+fmt.Printf("Results - %+v", slugResult)
+```
+
+### Videogame
+```go
+import (
+    "fmt"
+
+    "github.com/mmendez3800/startgg-go"
+)
+
+// Indicate the authorization token to be used for API calls
+startgg.SetAuthToken("STARTGG_TOKEN")
+
+// Pull the results of the Videogame object by ID reference
+idResult, err := startgg.VideogameByID(1)
+if err != nil {
+    fmt.Printf("Error - %s", err)
+}
+fmt.Printf("Results - %+v", idResult)
+
+// Pull the results of the Videogame object by slug reference
+slugResult, err := startgg.VideogameBySlug("game/ultimate-1")
 if err != nil {
     fmt.Printf("Error - %s", err)
 }

@@ -3,15 +3,12 @@
 package queries
 
 const (
-	UserQuery = `query UserQuery($id: ID, $slug: String) {
-		user(id: $id, slug: $slug) {
+	ShopQuery = `query ShopQuery($id: ID, $slug: String) {
+		shop(id: $id, slug: $slug) {
 			id
-			bio
-			birthday
-			discriminator
-			genderPronoun
 			name
 			slug
+			url
 		}
 	}`
 )

@@ -30,5 +30,5 @@ func TestUser(t *testing.T) {
 	if err != nil {
 		UserLogger.Fatalf("- Slug Error - %s", err.Error())
 	}
-	UserLogger.Printf("- Slug Results - %+v", slugResult)
+	UserLogger.Printf("- Slug Results - %+v\n\n", slugResult)
 }

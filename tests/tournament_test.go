@@ -18,17 +18,17 @@ func TestTournament(t *testing.T) {
 	// Implements a level of logging to indicate type.
 	TournamentLogger := log.New(os.Stdout, "TOURNAMENT TESTS - ", log.LstdFlags)
 
-	// Performs test for tournament object by ID.
+	// Performs test for Tournament object by ID.
 	idResult, err := startgg.TournamentByID(326786)
 	if err != nil {
 		TournamentLogger.Fatalf("- ID Error - %s", err.Error())
 	}
 	TournamentLogger.Printf("- ID Results - %+v", idResult)
 
-	// Performs test for tournament object by slug.
+	// Performs test for Tournament object by slug.
 	slugResult, err := startgg.TournamentBySlug("tournament/genesis-8")
 	if err != nil {
 		TournamentLogger.Fatalf("- Slug Error - %s", err.Error())
 	}
-	TournamentLogger.Printf("- Slug Results - %+v", slugResult)
+	TournamentLogger.Printf("- Slug Results - %+v\n\n", slugResult)
 }
